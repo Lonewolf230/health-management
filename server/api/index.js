@@ -13,7 +13,10 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Middleware
 app.use(cors({
-  origin:['http://localhost:3000','']
+  origin:['http://localhost:3000','https://health-management-sand.vercel.app'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials:true,
 }));
 app.use(express.json());
 
