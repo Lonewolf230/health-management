@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://health-management-backend-bf7d0taf5-manishs-projects-f67c79fe.vercel.app/api';
 
 export function getToken() {
   return localStorage.getItem('token');
